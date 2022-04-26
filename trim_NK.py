@@ -10,8 +10,12 @@ import geopandas as gpd
 NKparcels = gpd.read_file('Virginia_Parcels_(Map_Service).zip')
 
 NKassessment = pd.read_csv('NKAssessment.csv', index_col=False)
+
 # dropping first column where unnamed:0 
 NKassessment.drop(list(NKassessment.columns)[0], axis=1, inplace=True)
+
+# drop values where New Kent County is not in VA
+NKassessment = NKassessment.query(' STATE == "VA"')
 # merge parcels on assessment on 'PARCELID' in order to combine parcel data on assessment data 
 # 'PARCELID' is the same in both csv files 
 NKmerge = pd.merge(NKparcels, NKassessment, on='PARCELID')
