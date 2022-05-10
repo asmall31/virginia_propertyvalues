@@ -20,18 +20,26 @@ NKassessment = NKassessment.query(' STATE == "VA"')
 # 'PARCELID' is the same in both csv files 
 NKmerge = pd.merge(NKparcels, NKassessment, on='PARCELID')
 NKmerge.to_file('NewKentunfiltered.gpkg', layer='merge', index=False)
+
+NKmerge.to_file('NewKentunmerged.shp', driver='ESRI Shapefile')
 #%%
 # create top 20 land assessment parcel values including non residential
 top_nonresparcels = NKmerge.sort_values(by='TOTAL_ASSESS')[-20:]
 top_nonresparcels.to_file('TopAssessmentvalues.gpkg', layer='nonresidential', index=False)
 # drop values where nan for parcel id 
 NKmerge = NKmerge.dropna(subset='PARCELID')
+#%%
+# total schools in county
+schools = NKmerge.query("STYLE =='School'")
+
+schools.to_file('NKSchools.gpkg', layer='school', index=False)
 
 #%%
 # drop values where nan for number of beds
 # filters down to only residential housing
 NKmerge = NKmerge.dropna(subset=['NUM_BED'])
 NKmerge.to_file('Residentialproperties.gpkg', layer='residential', index=False)
+
 
 #%% layer 1
 # create new column difference in sale price to assessment which is equal to sale price minus total assessment 
@@ -101,6 +109,14 @@ total_a_s['utilities'] = total_a_s['PARCELID'].isin(occupied)
 # Set index of total_a_s to parcelid
 total_a_s = total_a_s.set_index(['PARCELID'])
 
+#%% layer 6
+# top 10 parcels in sq ft
+largestsqft = total_a_s.sort_values(by='LIVING_SQFT')[-10:]
+# bottom 10 parcels sq ft
+smallestsqft = total_a_s.sort_values(by='LIVING_SQFT')[:10]
+
+
+
 #%%
 layers = total_a_s[['geometry', 'DIFF_SP-ASSESS', 'GRADE', 'YR_BUILT', 'STYLE', 'utilities', 'LIVING_SQFT', 'topten', 'bottomten', 'Occupied']]
 
@@ -109,6 +125,8 @@ layers = total_a_s[['geometry', 'DIFF_SP-ASSESS', 'GRADE', 'YR_BUILT', 'STYLE', 
 #layers = value_layer.set_crs(geometry.crs)
 layers.to_file('NewKent.gpkg', layer='values', index=False)
 
+
+layers.to_file('NewKent.shp', driver='ESRI Shapefile')
 
 
 
