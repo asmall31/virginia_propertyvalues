@@ -16,7 +16,7 @@ The analysis looked specifically at the top ten residential parcels comparing th
 
 ## Tableau 
 ### MAPNK 
-#### Please visit the following link to engage with an interactive map of New Kent County
+### Please visit the following link to engage with an interactive map of New Kent County
 https://public.tableau.com/app/profile/allison7367/viz/MapNK/Sheet4?publish=yes
 #### The map is colored by block group median earnings
 ##### The map contains for each Parcel:
