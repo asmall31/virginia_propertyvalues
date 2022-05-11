@@ -28,3 +28,4 @@ parcels_plus = parcels.sjoin(merged,how='left',predicate='contains')
 print('ideally, these are equal:', len(parcels), len(parcels_plus) )
 
 parcels_plus.to_file('parcels_plus.gpkg',layer='parcels',index=False)
+parcels_plus.to_file('parcels_plus.shp', driver='ESRI Shapefile')
