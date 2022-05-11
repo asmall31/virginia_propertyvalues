@@ -12,7 +12,7 @@ The analysis looked specifically at the top ten residential parcels comparing th
 + The lowest earning median block groups - $25,919 and $32,188 were comprised of 89% and 65% white population. The percentage owned of total housing was 89% and 65%. 
 + The top assessed land values for parcels in the County were mainly government owned. These parcels included schools, a courthouse, a hospital, a race building, a church, strip stores and a commercial building. 
 + The top ten residential parcels consisted of farmhouses, ranch style homes as well as a historical dwelling. These top parcels were very closely geographically correlated with nearby schools. 
-+ There was a substantial number of parcels with no "PARCELID" attribute as these parcels had been bought by Patriots Landing Management Corporation. These parcels were bought in two phases, seeming for future development purposes. These parcels were mainly located in the city of Virginia Beach. 
++ There was a substantial number of parcels with no "PARCELID" attribute as these parcels had been bought by Patriots Landing Management Corporation. These parcels were bought in two phases, anticipated for future development purposes. These parcels were mainly located in the city of Virginia Beach. 
 
 
 ## Input Data
