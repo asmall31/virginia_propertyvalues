@@ -77,8 +77,8 @@ NKassessment = NKassessment.query(' STATE == "VA"')
 
 #### 6. join.py
 - The main goal of this script was to join together the original parcel data with the real estate merged onto it, from script trim_NK.py and merge it onto the demographic data from script NKmergedemo.py.
--
-
+- This code and the shape file created is what is used for the tableau interactive map.
+- This code is still an edited version as their are duplicate copies of parcel data as of 05/11/22.
 
 ## Figures
 
