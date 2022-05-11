@@ -10,13 +10,19 @@ import pandas as pd
 import geopandas as gpd
 
 
-# demographics = gpd.read_file('NKdemographics.gpkg', layer='demographics')
 # read in the demographic data
 demographics = pd.read_csv("NKdemo.csv", dtype={'GEOID':str})
 
 demographics = demographics.set_index(['GEOID'])
 # percentage of total population that is white
 demographics['percwhite'] = (demographics['total_pop_white']/demographics['total_pop'])*100
+# percent of the total population that is black 
+demographics['percblack'] = (demographics['total_pop_black']/demographics['total_pop'])*100
+# percent of the total population that is american indian
+demographics['percamericanindian'] = (demographics['total_pop_americanindian']/demographics['total_pop'])*100
+# percent of the total population that is asian 
+demographics['percblack'] = (demographics['total_pop_asian']/demographics['total_pop'])*100
+
 # percentage of total homes that are owned
 demographics['percowned'] = (demographics['housing_owned']/demographics['housing_total'])*100
 # percentage of total homes that are rented
