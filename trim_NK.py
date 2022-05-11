@@ -20,7 +20,7 @@ NKassessment = NKassessment.query(' STATE == "VA"')
 # 'PARCELID' is the same in both csv files 
 NKmerge = pd.merge(NKparcels, NKassessment, on='PARCELID')
 NKmerge.to_file('NewKentunfiltered.gpkg', layer='merge', index=False)
-
+NKmerge.to_csv('NewKent.csv')
 NKmerge.to_file('NewKentunmerged.shp', driver='ESRI Shapefile')
 #%%
 # create top 20 land assessment parcel values including non residential
@@ -82,8 +82,6 @@ occupied = total_a_s.query('IMPROVE_VACANT == "I"')
 occupied = occupied['PARCELID']
 total_a_s['Occupied'] = total_a_s['PARCELID'].isin(occupied)
 
-# figure this out when repository due 
-#percentocc = (occupied/total_a_s)*100
 
 # now total_a_s column Occupied will contain Parcels that people currently live in, can compare to total houses in county
 
@@ -95,7 +93,7 @@ total_a_s['Occupied'] = total_a_s['PARCELID'].isin(occupied)
 
 grades = total_a_s[['GRADE']]
 grades = grades.sort_values(by='GRADE')
-# can you put each grade as a layer on the map
+# put each grade as a layer on the map
 
 
 #%% # layer 5

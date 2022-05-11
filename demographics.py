@@ -9,9 +9,7 @@ Created on Mon May  2 18:40:10 2022
 
 import pandas as pd
 import geopandas as gpd
-import matplotlib.pyplot as plt
 import requests 
-import seaborn as sns
 import numpy as np
 # import census data for American Communial Survey
 #api = 'https:api.census.gov/data/2019/acs/acsse?'
