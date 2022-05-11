@@ -37,7 +37,7 @@ https://public.tableau.com/app/profile/allison7367/viz/MapNK/Sheet4?publish=yes
 For this analysis several data sources were used including:
 
 Parcel data for New Kent County 
-+ Available via 
++ Available via Virginia Parcels Map Service ArcGIS HUb https://hub.arcgis.com/datasets/d0945119ac1d44398b662c21f74d8080_0/explore
 
 Real estate data for New Kent County
 + Available via New Kent County, VA website http://www.co.newkent.state.va.us/200/Parcel-Data 
