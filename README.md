@@ -14,6 +14,24 @@ The analysis looked specifically at the top ten residential parcels comparing th
 + The top ten residential parcels consisted of farmhouses, ranch style homes as well as a historical dwelling. These top parcels were very closely geographically correlated with nearby schools. 
 + There was a substantial number of parcels with no "PARCELID" attribute as these parcels had been bought by Patriots Landing Management Corporation. These parcels were bought in two phases, anticipated for future development purposes. These parcels were mainly located in the city of Virginia Beach. 
 
+## Tableau 
+### MAPNK 
+#### Please visit the following link to engage with an interactive map of New Kent County
+https://public.tableau.com/app/profile/allison7367/viz/MapNK/Sheet4?publish=yes
+- The map is colored by block group median earnings
+- The map contains for each Parcel 
+- What city it is located in 
+- The grade of the structure
+- The most updated sale price 
+- The street quality in which the parcel is located
+- The style of residential property
+- The year the structure was built
+- The median earnings of the block group in which the parcel is located
+- The median percentage of the total population within the block group that is white
+- The acres for the parcel
+- The living sq ft
+- The median age for the block group in which the parcel is located
+- The number of bedrooms within the resident
 
 ## Input Data
 For this analysis several data sources were used including:
