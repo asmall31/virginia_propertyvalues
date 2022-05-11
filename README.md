@@ -82,3 +82,21 @@ NKassessment = NKassessment.query(' STATE == "VA"')
 
 ## Figures
 
+Top Assessment Valued Parcels
+
+![alt text](https://github.com/asmall31/virginia_propertyvalues_dev/blob/main/top%20parcels%20assessment%20values.png "Top Assessed Parcels")
+
+Total Residential Parcels - Yellow Parcels
+![alt text](https://github.com/asmall31/virginia_propertyvalues_dev/blob/main/total%20residential.png "Total Residential Parcels")
+
+Total Occupied Parcels - Blue Parcels
+![alt text](https://github.com/asmall31/virginia_propertyvalues_dev/blob/main/occupied%20residential%20parcels.png "Occupied Parcels") 
+
+Top 10 (blue) and Bottom (green) Parcels (Sale Price minus Assessed Value) - by Style
+![alt text](https://github.com/asmall31/virginia_propertyvalues_dev/blob/main/top:bottom%20residential%20parcels%20style.png "Top and Bottom Parcels")
+
+Top Parcels (blue) and School Districts (red) 
+![alt style](https://github.com/asmall31/virginia_propertyvalues_dev/blob/main/schools%20:%20top%20value.png "Top Parcels and Schools")
+
+Heat Map of Assessed Residential Parcels (red lower, blue higher)
+![alt style](https://github.com/asmall31/virginia_propertyvalues_dev/blob/main/heat%20map%20.png "Heat Map of Residential Parcels")
