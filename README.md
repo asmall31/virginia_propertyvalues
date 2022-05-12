@@ -79,7 +79,7 @@ NKassessment = NKassessment.query(' STATE == "VA"')
 #### 3. county.py
 - This script utilized the county file from the census website.
 - This script created a border for the county to be outlined in QGIS.
-- noted that New Kent County's FIPS code is 51127.
+- Noted that New Kent County's FIPS code is 51127.
 
 #### 4. demographics.py
 - This script was written to find different demographic data within New Kent County.
