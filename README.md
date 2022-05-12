@@ -20,7 +20,7 @@ The analysis looked specifically at the top ten residential parcels comparing th
 https://public.tableau.com/app/profile/allison7367/viz/MapNK/Sheet4?publish=yes
 #### The map is colored by block group median earnings
 ##### The map contains for each Parcel:
-- What city the parcel is located in 
+- What subdivision the parcel is located in 
 - The grade of the structure
 - The most updated sale price 
 - The street quality in which the parcel is located
